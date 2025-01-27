@@ -1,32 +1,48 @@
 #include <stdio.h>
 
-int main() {
+int main(){
 
-    int populacao;
-    int area;
-    int pib;
-    int npturismo;
-    char cidadenome1a[100], cidadenome2a[100], cidadenome3a[100],cidadenome4a[100],cidadenome5a[100],cidadenome6a[100],cidadenome7a[100],cidadenome8a[100]
-    char estadonome1a[100], estadonome2a[100], estadonome3a[100], estadonome4a[100];
-    char paisnome1[100], paisnome2[100], paisnome3[100], paisnome4[100];
+    char nomepais[50];
+    char nomeestadoA[50], nomeestadoB[50], nomeestadoC[50],nomeestadoD[50],nomeestadoE[50],nomeestadoF[50],nomeestadoG[50],nomeestadoH[50];
+    char cidadeA01[50], cidadeA02[50], cidadeA03[50], cidadeA04[50];
+    int areaA01,areaA02,areaA03,areaA04;
+    int turismoA01,turismoA02,turismoA03,turismoA04;
+    int populacaoA01, populacaoA02,populacaoA03,populacaoA04;
+    int pibA01,pibA02,pibA03,pibA04;
 
-printf("Bem-Vindos Ao Jogo SuperTrunfo Países\n");
+printf("BEM-VINDOS AO JOGO SUPER TRUNFO PAÍSES\n");
 
-printf("\n");
+printf("Digite o nome do País:\n");
+scanf("%s", &nomepais);
 
-printf("Para Iniciar Sua Jornada No Jogo,É Necessário Cadastrar Suas Cartas...\n"); //introdução do jogo + explicação
-printf("Cada Carta Representa Um País,Cada País Possui 4 Estados E Cada Estado Possui 8 Cidades.\n");
-printf("Que Vença O Mais Forte!!!\n");
+printf("Ótimo, seu País é o %s, agora vamos cadastrar estados do %s divididos entre A ao H, cada estado terá 4 cidades!!\n", nomepais, nomepais);
 
-printf("Qual o nome do seu País?\n"); //começo do cadastro das cartas, País de código A
-scanf("%s", paisnome1);
+printf("Digite o nome do estado A:\n");
+scanf("%s", &nomeestadoA);
 
-printf("Qual o nome da cidade número 1 do seu País?")
+printf("seu primeiro estado é o %s, agora vamos cadastrar 4 de suas cidades...\n", nomeestadoA);
+
+printf("Digite o nome da Cidade 1\n");
+scanf("%s", cidadeA01 );
+
+printf("Qual a população de/a %s\n", cidadeA01);
+scanf("%d", &populacaoA01);
+
+printf("Digite a área de/a %s\n",cidadeA01);
+scanf("%d", &areaA01);
+
+printf("Qual é o pib de/a %s\n", cidadeA01);
+scanf("%d", &pibA01);
+
+printf("Qual é a quantidade de pontos turísticos de %s\n", cidadeA01);
+scanf("%d", &turismoA01);
+
+printf("DADOS CIDADE A01\n");
+printf("Polução: %d\n", populacaoA01);
+printf("Pib:%d\n", pibA01);
+printf("Área:%d\n", areaA01);
+printf("Número de pontos turísticos:%d\n", turismoA01);
 
 
-    
-printf("\n");
-printf("\n");
-printf("\n");
-    return 0;
+return 0;
 }
