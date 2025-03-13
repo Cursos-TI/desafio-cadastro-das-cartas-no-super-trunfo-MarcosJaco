@@ -1,48 +1,77 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
-    char nomepais[50];
-    char nomeestadoA[50], nomeestadoB[50], nomeestadoC[50],nomeestadoD[50],nomeestadoE[50],nomeestadoF[50],nomeestadoG[50],nomeestadoH[50];
-    char cidadeA01[50], cidadeA02[50], cidadeA03[50], cidadeA04[50];
-    int areaA01,areaA02,areaA03,areaA04;
-    int turismoA01,turismoA02,turismoA03,turismoA04;
-    int populacaoA01, populacaoA02,populacaoA03,populacaoA04;
-    int pibA01,pibA02,pibA03,pibA04;
+    char estado1, estado2, codigocarta1[10], codigocarta2[10], nomecidade1[50], nomecidade2[50];
+    int populacao1, populacao2, pontosturisticos1, pontosturisticos2;
+    float area1, area2, pib1, pib2;
 
-printf("BEM-VINDOS AO JOGO SUPER TRUNFO PAÍSES\n");
+    printf("### Super Trunfo Em C - Tema 1 ###\n\n");
 
-printf("Digite o nome do País:\n");
-scanf("%s", &nomepais);
+    printf("Cadastro Carta 1:\n");
 
-printf("Ótimo, seu País é o %s, agora vamos cadastrar estados do %s divididos entre A ao H, cada estado terá 4 cidades!!\n", nomepais, nomepais);
+    printf("Digite uma letra entre A e H para o Estado:\n");
+    scanf(" %c", &estado1);
 
-printf("Digite o nome do estado A:\n");
-scanf("%s", &nomeestadoA);
+    printf("Digite a letra do estado seguida de um número de 01 a 04 (ex: A01, B03)\n");
+    scanf(" %s", codigocarta1);
 
-printf("seu primeiro estado é o %s, agora vamos cadastrar 4 de suas cidades...\n", nomeestadoA);
+    printf("Digite o nome da cidade:\n");
+    scanf(" %s", nomecidade1);
 
-printf("Digite o nome da Cidade 1\n");
-scanf("%s", cidadeA01 );
+    printf("Digite o numero da população da cidade:\n");
+    scanf("%d", &populacao1);
 
-printf("Qual a população de/a %s\n", cidadeA01);
-scanf("%d", &populacaoA01);
+    printf("Digite o tamanho da área da cidade em km²:\n");
+    scanf("%f", &area1);
 
-printf("Digite a área de/a %s\n",cidadeA01);
-scanf("%d", &areaA01);
+    printf("Digite o PIB da cidade em Reais:\n");
+    scanf("%f", &pib1);
 
-printf("Qual é o pib de/a %s\n", cidadeA01);
-scanf("%d", &pibA01);
+    printf("Digite a quantidade de pontos turisticos da cidade:\n");
+    scanf("%d", &pontosturisticos1);
 
-printf("Qual é a quantidade de pontos turísticos de %s\n", cidadeA01);
-scanf("%d", &turismoA01);
+    printf("\nCadastro Carta 2:\n");
 
-printf("DADOS CIDADE A01\n");
-printf("Polução: %d\n", populacaoA01);
-printf("Pib:%d\n", pibA01);
-printf("Área:%d\n", areaA01);
-printf("Número de pontos turísticos:%d\n", turismoA01);
+    printf("Digite uma letra entre A e H para o Estado:\n");
+    scanf(" %c", &estado2);
 
+    printf("Digite a letra do estado seguida de um número de 01 a 04 (ex: A01, B03)\n");
+    scanf(" %s", codigocarta2);
 
-return 0;
+    printf("Digite o nome da cidade:\n");
+    scanf(" %s", nomecidade2);
+
+    printf("Digite o numero da população da cidade:\n");
+    scanf("%d", &populacao2);
+
+    printf("Digite o tamanho da area da cidade em km²\n");
+    scanf("%f", &area2);
+
+    printf("Digite o PIB da cidade em Reais:\n");
+    scanf("%f", &pib2);
+
+    printf("Digite a quantidade de pontos turisticos da cidade:\n");
+    scanf("%d", &pontosturisticos2);
+
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigocarta1);
+    printf("Nome da Cidade: %s\n", nomecidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área em km²: %.2f\n", area1);
+    printf("PIB em Reais: %.2f\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n\n", pontosturisticos1);
+
+    printf("Carta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigocarta2);
+    printf("Nome da Cidade: %s\n", nomecidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área em km²: %.2f\n", area2);
+    printf("PIB em Reais: %.2f\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n\n", pontosturisticos2);
+
+    return 0;
 }
